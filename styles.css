@@ -1,0 +1,185 @@
+* {
+	box-sizing: border-box;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	background-color: seashell;
+	font-family: 'Poppins', sans-serif;
+}
+
+h1::selection, legend::selection, label::selection {
+	background-color: darkgreen;
+	color: white;
+}
+
+input:focus {
+	background-color: seashell;
+}
+
+
+@media all and (min-width: 320px) {
+
+	body, .container {
+		display: flex; flex-direction: column;
+		justify-content: center;align-items: center;
+	}
+
+	.title {
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		text-align: center;
+		font-size: 1.5rem;
+		margin-bottom: 0.3rem;
+		text-shadow: 0rem 0rem 0.1rem gray;
+	}
+
+	.container {
+	width: 90%;
+	padding: 1rem;
+	background-image: linear-gradient(to bottom left, seashell, rgb(25, 180, 170), rgb(55, 200, 180), rgb(25, 180, 170), seashell);
+	border-radius: 1rem;
+	}
+
+	#data-form {
+		width: 100%;
+		display: flex; flex-direction: column;
+		justify-content: center; align-items: center;
+	}
+
+	input {
+		width: 100%;
+		padding: 0.3rem;
+		margin-bottom: 0.5rem;
+		outline: none;
+		font-size: 0.9rem;
+		border-radius: 0.5rem;
+		transition: all 0.2s linear;
+	}
+
+	.genderContainer {
+		width: 100%;
+		display: flex; flex-direction: column;
+		justify-content: center; align-items: center;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+	}
+
+	.genderContainer legend {
+		text-decoration: underline;
+		font-size: 0.9rem;
+		padding-top: 0.5rem;
+		color: rgba(0, 0, 0, 0.9);
+	}
+
+	.gender-div {
+		width: 100%;
+		display: flex; flex-direction: row;
+		justify-content: left; align-items: center;
+	}
+
+	.gender-div label {
+		text-decoration: none;
+	}
+
+	.gender {
+		width: 5%;
+	}
+
+	label {
+		font-size: 0.9rem;
+		margin-bottom: 0.5rem;
+		text-decoration: underline;
+		color: rgba(0, 0, 0, 0.9);
+	}
+
+	.gender-div label {
+		padding-left: 0.2rem;
+	}
+
+	.btn-div {
+		text-align: center;
+		margin: 0.5rem;
+	}
+
+	.submit-btn {
+		width: 100%;
+		padding: 0.5rem;
+		border-radius: 1rem;
+		background-color: darkgreen;
+		color: white;
+		font-size: 0.9rem;
+	}
+
+}
+
+@media all and (min-width: 380px) {
+	.container {
+		width: 80%;
+	}
+}
+
+@media all and (min-width: 480px) {
+	.container {
+		width: 75%;
+	}
+
+	.form-div, .genderContainer, .btn-div {
+		width: 100%;
+	}
+}
+
+@media all and (min-width: 576px) {
+	.container {
+		width: 70%;
+	}
+}
+
+@media all and (min-width: 768px) {
+	.container {
+		width: 60%;
+	}
+}
+
+@media all and (min-width: 960px) {
+
+	.title {
+		font-size: 2rem;
+	}
+
+	.container {
+		width: 50%;
+	}
+
+	.form-div, .genderContainer, .btn-div {
+		width: 90%;
+	}
+
+	.gender-div label {
+		padding-left: 0.1rem;
+	}
+	
+	.submit-btn {
+		transition: all 0.3s linear;
+	}
+
+	.submit-btn:hover {
+		background-color: green;
+		cursor: pointer;
+	}
+
+}
+
+@media all and (min-width: 1366px) {
+
+	.container {
+		width: 45%;
+	}
+
+	input {
+		padding: 0.5rem;
+	}
+
+}
